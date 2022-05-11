@@ -1,16 +1,31 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: windows-2019
+  Facets-Batch-Builds:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was event."
       - name: Check out repository code
         uses: actions/checkout@v2
-      - run: echo "hello"
-        working-directory: ./cicd
-      - run: ansible-playbook -i hosts batch_pb.yml
+      - run: echo "task1"
+      - name: test2
+        uses: osism/ansible-lint-action@v2.0.0
+        with:
+         targets:
+            cicd/batch_pb.yml
+            cicd/hosts
+            
+#        uses: dawidd6/action-ansible-playbook@v2
+#        with:
+#          playbook: cicd/batch_pb.yml
+#          directory: C:\Ubuntu\Ubuntu\Ubuntu>ubuntu.exe run 
+#          inventory: hosts
         
+#        working-directory: .
+#      - run: ansible-playbook -i hosts batch_pb.yml
+      
+        
+            
         
   
 
