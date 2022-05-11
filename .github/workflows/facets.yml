@@ -1,20 +1,16 @@
-name: facets installation
-on:
-   push:
-     branches: main    
+name: GitHub Actions Demo
+on: [push]
 jobs:
- build:
-  runs-on: windows-2019
+  Explore-GitHub-Actions:
+    runs-on: windows-2019
+    steps:
+      - run: echo "🎉 The job was event."
+      - name: Check out repository code
+        uses: actions/checkout@v3
   
-  steps:
-    - uses: actions/checkout@v2
 
-    - name: install batch_build
-    - run: echo install batch core
-
-    - name: powershell
-    - working-directory: ./cicd
-    - run: ansible-playbook interactive_pb.yml -i hosts
+  
+     
    
 
 
