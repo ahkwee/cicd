@@ -8,6 +8,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "hello"
+      - working-directory: .\cicd
       - run: ansible-playbook -i hosts batch_pb.yml
         
         
