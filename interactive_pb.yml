@@ -2,7 +2,7 @@
  - name: Facets interactive
    hosts: win
    gather_facts: false
-
- - name: install facets interactive
-   debug:
-     msg: "install facets interactive"
+   tasks:
+    - name: install facets interactive
+      debug:
+        msg: "install facets interactive"
