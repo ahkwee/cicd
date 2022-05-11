@@ -7,6 +7,10 @@ jobs:
       - run: echo "🎉 The job was event."
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: tasks
+      - run: ansible-playbook -i hosts batch_pb.yml
+        
+        
   
 
   
