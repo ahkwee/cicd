@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 on: [push]
 jobs:
   Facets-Batch-Builds:
-    runs-on: ububtu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was event."
       - name: Check out repository code
