@@ -12,7 +12,7 @@ jobs:
         uses: osism/ansible-lint-action@v2.0.0
         with:
          targets:
-            batch_pb.yml
+            interactive_pb.yml
             hosts
             
 #        uses: dawidd6/action-ansible-playbook@v2
