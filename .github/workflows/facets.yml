@@ -6,9 +6,7 @@ jobs:
     steps:
       - run: echo "🎉 The job was event."
       - name: Check out repository code
-        uses: actions/checkout@v3
-        
-      - name: tasks
+        uses: actions/checkout@v2
       - run: echo "hello"
         
         
