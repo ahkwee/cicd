@@ -12,7 +12,7 @@ jobs:
         uses: dawidd6/action-ansible-playbook@v2
         with:
           playbook: cicd/batch_pb.yml
-          directory: ./
+          directory: C:\Ubuntu\Ubuntu\Ubuntu>ubuntu.exe run 
           inventory: hosts
         
 #        working-directory: .
