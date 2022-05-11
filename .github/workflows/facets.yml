@@ -37,7 +37,7 @@ jobs:
               ansible_user=dev\admatan01
               ansible_password=Poameiri21!@
         
-#        working-directory: ...
+#        working-directory: ....
 #      - run: ansible-playbook -i hosts batch_pb.yml
       
         
