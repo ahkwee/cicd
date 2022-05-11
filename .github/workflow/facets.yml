@@ -24,7 +24,5 @@ batch_build:
     - name: powershell
     - working-directory: ./facets
     - run: ansible-playbook interactive_pb.yml -i hosts
-   
-
 
 
