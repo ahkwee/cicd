@@ -7,10 +7,19 @@ jobs:
       - run: echo "🎉 The job was event."
       - name: Check out repository code
         uses: actions/checkout@v2
-      - run: echo "hello"
-        working-directory: .
-      - run: ansible-playbook -i hosts batch_pb.yml
+      - run: echo "task1"
+      - name: test2
+        uses: davidd6@/action-ansible-playbook@v.2.5.0
+        with:
+          playbook: cicd/batch_pb.yml
+          directory: ./
+          inventory: hosts
         
+#        working-directory: .
+#      - run: ansible-playbook -i hosts batch_pb.yml
+      
+        
+            
         
   
 
