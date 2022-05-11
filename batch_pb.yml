@@ -1,0 +1,8 @@
+---
+ - name: Facets batch
+   hosts: win
+   gather_facts: false
+
+ - name: install facets batch
+   debug:
+     msg: "install facets batch"
