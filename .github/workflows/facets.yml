@@ -12,8 +12,8 @@ jobs:
         uses: osism/ansible-lint-action@v2.0.0
         with:
          targets:
-            cicd/batch_pb.yml
-            cicd/hosts
+            cicd\batch_pb.yml
+            cicd\hosts
             
 #        uses: dawidd6/action-ansible-playbook@v2
 #        with:
