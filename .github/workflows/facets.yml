@@ -6,14 +6,13 @@ jobs:
  build:
   runs-on: windows-2019
   steps:
-    - name: manage repo
     - uses: actions/checkout@v2
 
     - name: install batch_build
     - run: echo install batch core
 
     - name: powershell
-    - working-directory: ./facets
+    - working-directory: ./cicd
     - run: ansible-playbook interactive_pb.yml -i hosts
    
 
