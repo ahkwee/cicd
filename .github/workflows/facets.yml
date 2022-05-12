@@ -7,12 +7,7 @@ jobs:
          - name: checkout code 1
            uses: actions/checkout@v2
          - name: with requirements.yml
-           uses: ./
-           with:
-              playbook: interactive_pb.yml
-              directory: ./
-             # requirements: requirements.yml
-              options: --inventory hosts
+           run: ansible-playbook -i hosts interactive_pb.yml
               
   Facets-Batch-Builds:
     runs-on: ubuntu-latest
