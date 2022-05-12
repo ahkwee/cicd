@@ -39,6 +39,21 @@ jobs:
         
 #        working-directory: ....
 #      - run: ansible-playbook -i hosts batch_pb.yml
+
+Facets-interactive-Build:
+ runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: With requirements
+        uses: ./
+        with:
+          playbook: interactive_pb.yml
+          directory: ./
+          requirements: requirements.yml
+          options: --inventory hosts
+
+     
       
         
             
