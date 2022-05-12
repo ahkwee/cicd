@@ -4,7 +4,7 @@ jobs:
   Facets-Batch-Builds:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was event.."
+      - run: echo "🎉 The job was event..."
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "task1"
