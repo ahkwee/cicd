@@ -19,23 +19,23 @@ jobs:
         with:
           playbook: batch_pb.yml
           directory: ./
-          inventory: ${{ secrets.MY_HOSTS_FILES }}
-#           [win]
-#              10.44.240.245
-#              10.44.241.171
-#              10.44.241.172
-#              10.44.240.246
-#              10.44.241.173
-#              10.34.243.166
-#              10.44.241.174
+          inventory: |
+           [win]
+              10.44.240.245
+              10.44.241.171
+              10.44.241.172
+              10.44.240.246
+              10.44.241.173
+              10.34.243.166
+              10.44.241.174
 
-#           [win:vars]
-#              ansible_connection=winrm
-#              ansible_port=5986
-#              ansible_winrm_server_cert_validation=ignore
-#              ansible_winrm_transport=credssp
-#              ansible_user=dev\admatan01
-#              ansible_password=Poameiri21!@
+           [win:vars]
+              ansible_connection=winrm
+              ansible_port=5986
+              ansible_winrm_server_cert_validation=ignore
+              ansible_winrm_transport=credssp
+              ansible_user=dev\admatan01
+              ansible_password=Poameiri21!@
         
 #        working-directory: ....
 #      - run: ansible-playbook -i hosts batch_pb.yml
