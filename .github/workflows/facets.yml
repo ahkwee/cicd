@@ -1,7 +1,7 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
-  Facets-Int-Builds:
+  Facets-Interactive-Builds:
     runs-on: ubuntu-latest
     steps:
          - name: checkout code 1..
