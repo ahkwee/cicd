@@ -4,7 +4,7 @@ jobs:
   Facets-Int-Builds:
     runs-on: ubuntu-latest
     steps:
-         - name: checkout code
+         - name: checkout code 1
            uses: actions/checkout@v2
          - name: with requirements.yml
            uses: ./
