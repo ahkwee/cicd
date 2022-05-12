@@ -4,7 +4,7 @@ jobs:
   Facets-Int-Builds:
     runs-on: ubuntu-latest
     steps:
-         - name: checkout code 1
+         - name: checkout code 1..
            uses: actions/checkout@v2
          - name: running interactive software
            run: ansible-playbook -i hosts interactive_pb.yml
