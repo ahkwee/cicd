@@ -11,7 +11,7 @@ jobs:
            with:
               playbook: interactive_pb.yml
               directory: ./
-              requirements: requirements.yml
+             # requirements: requirements.yml
               options: --inventory hosts
               
   Facets-Batch-Builds:
