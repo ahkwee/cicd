@@ -6,7 +6,7 @@ jobs:
     steps:
          - name: checkout code 1
            uses: actions/checkout@v2
-         - name: with requirements.yml
+         - name: running interactive software
            run: ansible-playbook -i hosts interactive_pb.yml
               
   Facets-Batch-Builds:
@@ -16,13 +16,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "task1"
-      - name: test2
-#        uses: osism/ansible-lint-action@v2.0.0
-#        with:
-#         targets:
-#            interactive_pb.yml
-#            hosts
-            
+      - name: test2        
         uses: dawidd6/action-ansible-playbook@v2
         with:
           playbook: batch_pb.yml
