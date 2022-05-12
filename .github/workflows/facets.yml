@@ -20,7 +20,7 @@ jobs:
           playbook: batch_pb.yml
           directory: ./
           inventory: |
-                     ${{ MY_HOSTS_FILES }}
+                     ${{ secrets.MY_HOSTS_FILES }}
 #           [win]
 #              10.44.240.245
 #              10.44.241.171
